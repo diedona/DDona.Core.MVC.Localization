@@ -34,7 +34,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - DDona.Core.MVC.Localization</p>
+            @{ await Html.RenderPartialAsync("_Footer"); }
         </footer>
     </div>
 
