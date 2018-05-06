@@ -1,9 +1,12 @@
-﻿@{
-    ViewData["Title"] = "Página Inicial";
+﻿@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Initial Page"];
 }
 
 <div class="row">
     <div class="col-md-12">
-        <h3>Olá Mundo</h3>
+        <p>IsResourceNotFound = @Localizer["Hello World!"].IsResourceNotFound</p>
+        <h3>@Localizer["Hello World!"]</h3>
     </div>
 </div>

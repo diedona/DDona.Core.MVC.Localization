@@ -1,8 +1,9 @@
-﻿@{
+﻿@inject IViewLocalizer Localizer
+@{
     ViewData["Title"] = "Sobre";
 }
 
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>@Localizer["Use this area to provide additional information"]. (not found? @Localizer["Use this area to provide additional information"].IsResourceNotFound)</p>
